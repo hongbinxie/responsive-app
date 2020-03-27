@@ -62,6 +62,19 @@ header .top ul li a{
 	color:#aaaaaa;
 }
 
+@media only screen and (max-width: 30em){
+
+	header .top .top-content .dz{
+		display: none;
+	}
+	header .top ul li{
+		display: inline-block;
+		padding: 0 1rem;
+	}
+
+}
+
+
 header .main{
 	background: #999999;
 }
@@ -78,13 +91,37 @@ header .main ul{
 }
 header .main ul li{
 	display: inline-block;
-	padding: 4rem 2rem;
-
+	padding: 4rem 1.5rem;
 }
 header .main ul li a{
 	display: inline-block;
 	color: #fff;
 	font-size: 1.6rem;
+}
+@media only screen and (max-width: 50em){
+
+	header .main .logo{
+		float:none;
+		display: block;
+		text-align: center;
+	}
+	header .main ul{
+		text-align: center;
+	}
+	header .main ul li{
+		display: inline-block;
+		padding: 2rem 1rem;
+	}
+
+}
+@media only screen and (max-width: 30em){
+	header .main ul li:nth-child(1){
+		display: none;
+	}
+	header .main ul li{
+		display: inline-block;
+		padding: 2rem .5rem;
+	}
 }
 /*
 	主体
@@ -93,10 +130,6 @@ header .main ul li a{
 .container{
 
 	width:100%;
-}
-
-.ad{
-	display: none;
 }
 
 .fire-content{
@@ -123,6 +156,19 @@ header .main ul li a{
 	display: block;
 	margin: 0 auto;
 	font-size:1.8rem;
+}
+
+@media only screen and (max-width: 50em){
+	.fire-content .item{
+		display: inline-block;
+		width:100%;
+		padding:2rem 0;
+		text-align: center;
+	}
+	.fire-content .item + .item{
+		margin-left:0;
+	}
+
 }
 
 .strtive{
@@ -167,6 +213,34 @@ header .main ul li a{
 	text-align: center;
 	font-size: 1.8rem;
 }
+@media only screen and (max-width: 50em){
+
+	.strtive-content .item{
+		width:calc(33.333333%);
+	}
+	.strtive-content .item:nth-child(3){
+		display:none;
+	}
+
+}
+@media only screen and (max-width: 30em){
+
+	.strtive-content .item:nth-child(4){
+		display:none;
+	}	
+	.strtive-content .item{
+		width:calc(50%);
+	}
+	.strtive-content h1{
+		font-size: 2.1rem;
+
+	}
+
+	.strtive-content h3{
+		font-size: 1.2rem;
+	}
+
+}
 /*
 	footer
 */
@@ -194,6 +268,31 @@ footer .footer-content ul li{
 footer .footer-content ul li a{
 	display: inline-block;
 	color:#fff;
+}
+@media only screen and (max-width: 50em){
+
+	
+	footer .footer-content ul li:nth-child(3),
+	footer .footer-content ul li:nth-child(4){
+		display: none;
+	}
+	footer .footer-content ul li{
+		display: inline-block;
+		padding: 0 .3rem;
+	}
+
+}
+
+@media only screen and (max-width: 30em){
+
+	footer .footer-content span{
+		display: none;
+	}
+	footer .footer-content ul li{
+		display: inline-block;
+		padding: 0 .3rem;
+	}
+
 }
 
 
